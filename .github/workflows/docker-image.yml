@@ -28,8 +28,10 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t danixy8/docker-graphql:1.0.2 .
+        docker build -t danixy8/docker-graphql:latest .
         
     - name: Push Docker Image
       run: |
         docker push danixy8/docker-graphql:1.0.2
-    
+        docker push danixy8/docker-graphql:latest
+        
